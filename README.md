@@ -6,7 +6,7 @@ hafleet sends a `hafleet_status` event over the WebSocket connection it already 
 
 ## Installation
 
-1. In HACS, add `https://github.com/schmidtfx/home-assistant-fleet-hacs` as a custom repository (category: Integration) and install **hafleet**.
+1. In HACS, add `https://github.com/schmidtfx/home-assistant-fleet-hass` as a custom repository (category: Integration) and install **hafleet**.
 2. Restart Home Assistant.
 3. Go to Settings → Devices & services → Add integration → **hafleet**.
 4. Select the user whose access token hafleet uses. Events from any other user are ignored. hafleet's instance settings show the user ID to choose.
