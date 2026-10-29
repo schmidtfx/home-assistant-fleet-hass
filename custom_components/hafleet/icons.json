@@ -1,0 +1,9 @@
+{
+  "entity": {
+    "sensor": {
+      "open_tasks": { "default": "mdi:clipboard-alert-outline" },
+      "last_sync": { "default": "mdi:sync" },
+      "connection": { "default": "mdi:lan-connect" }
+    }
+  }
+}
