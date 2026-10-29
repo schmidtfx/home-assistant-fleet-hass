@@ -60,3 +60,11 @@ uv venv --python 3.13 .venv
 uv pip install --python .venv -r requirements_test.txt
 .venv/bin/python -m pytest
 ```
+
+## Releasing
+
+1. Set `version` in `custom_components/hafleet/manifest.json`.
+2. Add a `# Version X.Y.Z` section at the top of `CHANGES.md`, ending with a `---` line.
+3. Commit, then tag and push: `git tag X.Y.Z && git push origin X.Y.Z`.
+
+`.github/workflows/release.yml` fails if the tag (with or without a leading `v`) doesn't match the manifest version. Otherwise it creates a GitHub release whose body is the `CHANGES.md` section followed by GitHub's generated notes. HACS offers the releases as versions to install.
