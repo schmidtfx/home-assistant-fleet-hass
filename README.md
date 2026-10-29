@@ -49,6 +49,10 @@ automation:
           message: "hafleet reports critical tasks on this instance."
 ```
 
+## Brand images
+
+The integration ships its icon in `custom_components/hafleet/brand/`, rendered from hafleet's favicon. Home Assistant 2026.3 and later shows it; older versions show a placeholder. The HACS store only shows logos from the [home-assistant/brands](https://github.com/home-assistant/brands) repository, so it shows none for hafleet.
+
 ## Development
 
 ```sh
